@@ -16,42 +16,45 @@ enum Type {
 	instagram = 'Instagram',
 	email = 'Email',
 	titok = 'TikTok',
+  bilibili = 'Bilibili',
+  juejin = 'Juejin',
+  zhihu = 'ZhiHu',
 }
 
 const socials = [
 	{
 		name: Type.twitter,
-		url: 'https://twitter.com/xxx',
+		url: 'https://twitter.com/Evanyan',
 		icon: 'assets/svg/icons/x.svg',
 		color: 'bg-gray-800',
 	},
 	{
 		name: Type.gitHub,
-		url: 'https://github.com/xxx',
+		url: 'https://github.com/Glendia',
 		icon: 'assets/svg/icons/github.svg',
 		color: 'bg-cyan-500',
 	},
 	{
 		name: Type.instagram,
-		url: 'https://www.instagram.com/xxx',
+		url: 'https://www.instagram.com/renquexiu',
 		icon: 'assets/svg/icons/instagram.svg',
 		color: 'bg-yellow-400',
 	},
 	{
 		name: Type.email,
-		url: 'xxx@email.com',
+		url: 'hi@yimn.me',
 		icon: 'assets/svg/icons/email.svg',
-		color: 'bg-lime-400',
+		color: 'bg-blue-500',
 	},
-	{
-		name: Type.linkedIn,
-		url: 'https://www.linkedin.com/in/xxx',
+  {
+		name: Type.Bilibili,
+		url: 'https://www.bilibili.com/in/56886855855,
 		icon: 'assets/svg/icons/linkedin.svg',
 		color: 'bg-sky-700',
 	},
 	{
 		name: Type.titok,
-		url: 'https://www.tiktok.com/xxx',
+		url: 'https://www.tiktok.com/Evanyan',
 		icon: 'assets/svg/icons/tiktok.svg',
 		color: 'bg-pink-400',
 	},
@@ -59,7 +62,7 @@ const socials = [
 
 const getColor = (type: Type) => socials.find((social) => social.name === type)?.color;
 const getClass = (type: Type) =>
-	`scale-100 rounded-full border-2 border-gray-950 ${getColor(
+	`scale-100 rounded-full border-1 border-gray-950 ${getColor(
 		type,
 	)} transition duration-300 hover:scale-110 animate-zoom-in`;
 ---
